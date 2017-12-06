@@ -1,2 +1,31 @@
-# newRepository
-先占位
+# angular-demo
+
+在学习angular的时候的代码，angular的版本是5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
