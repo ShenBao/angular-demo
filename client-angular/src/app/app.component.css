@@ -1,5 +1,6 @@
 div {
     margin: 0 auto;
     max-width: 880px;
+    min-height: 100%;
     background: #f4ede3;
 }
