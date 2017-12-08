@@ -1,0 +1,9 @@
+<h1>
+    ngFor 来显示列表
+</h1>
+
+<ul>
+    <li *ngFor="let hero of heroes; index as i;">
+        {{i}} {{hero.id}}. {{hero.name}}
+    </li>
+</ul>

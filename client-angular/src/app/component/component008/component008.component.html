@@ -1,0 +1,10 @@
+<h1>
+    [class.selected]="hero === selectedHero" 来控制当前选中
+</h1>
+
+<p>点击那一个，那一个就会变红哦！</p>
+<ul>
+    <li *ngFor="let hero of heroes; index as i;" (click)="onSelect(hero)" [class.selected]="hero === selectedHero">
+        {{hero.id}}. {{hero.name}}
+    </li>
+</ul>
