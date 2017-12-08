@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule }   from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { APP_BASE_HREF, LocationStrategy, HashLocationStrategy } from '@angular/common';
+
 
 import { AppComponent } from './app.component';
 import { Code404Component } from './code404/code404.component';
@@ -19,6 +21,7 @@ import { Component007Component } from './component/component007/component007.com
 import { Component008Component } from './component/component008/component008.component';
 import { Component009Component } from './component/component009/component009.component';
 import { Router001Component } from './router/router001/router001.component';
+import { environment } from '../environments/environment.prod';
 
 const routerConfig = [
   {
@@ -105,7 +108,17 @@ const routerConfig = [
     HttpClientModule,
     RouterModule.forRoot(routerConfig)
   ],
-  providers: [],
+  providers: [
+    { // 开启基于Hash的路由模式
+      provide: LocationStrategy, 
+      useClass: HashLocationStrategy
+    },
+    {
+      provide: APP_BASE_HREF,
+      // useValue: environment.APP_BASE_HREF
+      useValue: '/'
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  APP_BASE_HREF: '/angular-demo/'
 };

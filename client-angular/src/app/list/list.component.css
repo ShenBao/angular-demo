@@ -1,6 +1,6 @@
 
 ul {
-    width: 300px;
+    /* width: 300px; */
     padding-left: 20px;
     list-style-type: decimal-leading-zero;
 }
