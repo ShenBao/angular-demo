@@ -1,12 +1,5 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule }   from '@angular/forms';
-import { RouterModule } from '@angular/router';
-import { HttpClientModule } from '@angular/common/http';
-import { APP_BASE_HREF, LocationStrategy, HashLocationStrategy } from '@angular/common';
-import { environment } from '../environments/environment.prod';
-
-import { AppRoutingModule } from './app-routing.module';
+import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { Code404Component } from './code404/code404.component';
@@ -25,43 +18,72 @@ import { Component009Component } from './component/component009/component009.com
 import { Router001Component } from './router/router001/router001.component';
 import { Router002Component } from './router/router002/router002.component';
 
+const routes: Routes = [
+  {
+    path: '',
+    redirectTo: '/index', //重定向路由
+    pathMatch: 'full'
+  },
+  {
+    path: 'index',
+    component: IndexComponent
+  },
+  {
+    path: 'http001',
+    component: Http001Component
+  },
+  {
+    path: 'component001',
+    component: Component001Component
+  },
+  {
+    path: 'component002',
+    component: Component002Component
+  },
+  {
+    path: 'component003',
+    component: Component003Component
+  },
+  {
+    path: 'component004',
+    component: Component004Component
+  },
+  {
+    path: 'component005',
+    component: Component005Component
+  },
+  {
+    path: 'component006',
+    component: Component006Component
+  },
+  {
+    path: 'component007',
+    component: Component007Component
+  },
+  {
+    path: 'component008',
+    component: Component008Component
+  },
+  {
+    path: 'component009',
+    component: Component009Component
+  },
+  {
+    path: 'router001',
+    component: Router001Component
+  },
+  {
+    path: 'router002',
+    component: Router002Component
+  },
+  {
+    path: '**',
+    component: Code404Component
+  }
+];
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    Code404Component,
-    IndexComponent,
-    ListComponent,
-    Http001Component,
-    Component001Component,
-    Component002Component,
-    Component003Component,
-    Component004Component,
-    Component005Component,
-    Component006Component,
-    Component007Component,
-    Component008Component,
-    Component009Component,
-    Router001Component,
-    Router002Component
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpClientModule,
-    AppRoutingModule
-  ],
-  providers: [
-    { // 开启基于Hash的路由模式
-      provide: LocationStrategy, 
-      useClass: HashLocationStrategy
-    },
-    {
-      provide: APP_BASE_HREF,
-      // useValue: environment.APP_BASE_HREF
-      useValue: '/'
-    }
-  ],
-  bootstrap: [AppComponent]
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
 })
-export class AppModule { }
+export class AppRoutingModule { }
