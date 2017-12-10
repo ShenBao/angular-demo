@@ -1,9 +1,9 @@
 <h1>routerLink的用法</h1>
 <ul>
   <li>
-    <a [routerLink]="['/']">主页</a>
+    <a [routerLink]="['/']">主页 ([routerLink]="['/'])</a>
   </li>
   <li>
-    <!-- <input type="button" value="Product Details" (click)="toIndex()"> -->
+    <p (click)="toIndex()">去主页 (this.router.navigate(["/index"])</p>
   </li>
 </ul>

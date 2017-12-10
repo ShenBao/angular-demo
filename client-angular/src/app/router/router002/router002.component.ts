@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from "@angular/router";
 
 @Component({
   selector: 'app-router002',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Router002Component implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
+
+  toIndex() {
+    this.router.navigate(["/index"]);
+  }
 
   ngOnInit() {
   }
