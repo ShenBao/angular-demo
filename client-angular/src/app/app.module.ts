@@ -30,6 +30,12 @@ import { Router005Component } from './router/router005/router005.component';
 import { Router006Component } from './router/router006/router006.component';
 import { Router007Component } from './router/router007/router007.component';
 import { Router008Component } from './router/router008/router008.component';
+import { Router009Component } from './router/router009/router009.component';
+import { Router009Children001Component } from './router/router009/router009.children001/router009.children001.component';
+import { Router009Children002Component } from './router/router009/router009.children002/router009.children002.component';
+import { Router010Component } from './router/router010/router010.component';
+import { Router010children001Component } from './router/router010/router010children001/router010children001.component';
+import { Router010children002Component } from './router/router010/router010children002/router010children002.component';
 
 
 @NgModule({
@@ -55,7 +61,13 @@ import { Router008Component } from './router/router008/router008.component';
     Router005Component,
     Router006Component,
     Router007Component,
-    Router008Component
+    Router008Component,
+    Router009Component,
+    Router009Children001Component,
+    Router009Children002Component,
+    Router010Component,
+    Router010children001Component,
+    Router010children002Component,
   ],
   imports: [
     BrowserModule,

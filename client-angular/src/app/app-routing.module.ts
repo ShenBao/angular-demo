@@ -23,6 +23,13 @@ import { Router005Component } from './router/router005/router005.component';
 import { Router006Component } from './router/router006/router006.component';
 import { Router007Component } from './router/router007/router007.component';
 import { Router008Component } from './router/router008/router008.component';
+import { Router009Component } from './router/router009/router009.component';
+import { Router009Children001Component } from './router/router009/router009.children001/router009.children001.component';
+import { Router009Children002Component } from './router/router009/router009.children002/router009.children002.component';
+import { Router010Component } from './router/router010/router010.component';
+import { Router010children001Component } from './router/router010/router010children001/router010children001.component';
+import { Router010children002Component } from './router/router010/router010children002/router010children002.component';
+
 
 const routes: Routes = [
   {
@@ -110,6 +117,35 @@ const routes: Routes = [
     path: 'redirectToRouter001',
     redirectTo: '/router001', //重定向路由
     pathMatch: 'full'
+  },
+  {
+    path: 'router009',
+    component: Router009Component,
+    children: [
+      {
+        path: '',
+        component: Router009Children001Component,
+      },
+      {
+        path: 'children/:id',
+        component: Router009Children002Component
+      }
+    ]
+  },
+  {
+    path: 'router010',
+    component: Router010Component,
+    children: [
+      {
+        path: '',
+        component: Router010children001Component,
+      },
+      {
+        path: 'router010chilren002',
+        component: Router010children002Component,
+        outlet: "aux"
+      }
+    ]
   },
   {
     path: '**',
