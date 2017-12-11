@@ -36,6 +36,7 @@ import { Router009Children002Component } from './router/router009/router009.chil
 import { Router010Component } from './router/router010/router010.component';
 import { Router010children001Component } from './router/router010/router010children001/router010children001.component';
 import { Router010children002Component } from './router/router010/router010children002/router010children002.component';
+import { Router011Component } from './router/router011/router011.component';
 
 
 @NgModule({
@@ -68,6 +69,7 @@ import { Router010children002Component } from './router/router010/router010child
     Router010Component,
     Router010children001Component,
     Router010children002Component,
+    Router011Component,
   ],
   imports: [
     BrowserModule,
