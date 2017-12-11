@@ -17,6 +17,12 @@ import { Component008Component } from './component/component008/component008.com
 import { Component009Component } from './component/component009/component009.component';
 import { Router001Component } from './router/router001/router001.component';
 import { Router002Component } from './router/router002/router002.component';
+import { Router003Component } from './router/router003/router003.component';
+import { Router004Component } from './router/router004/router004.component';
+import { Router005Component } from './router/router005/router005.component';
+import { Router006Component } from './router/router006/router006.component';
+import { Router007Component } from './router/router007/router007.component';
+import { Router008Component } from './router/router008/router008.component';
 
 const routes: Routes = [
   {
@@ -75,6 +81,35 @@ const routes: Routes = [
   {
     path: 'router002',
     component: Router002Component
+  },
+  {
+    path: 'router003',
+    component: Router003Component
+  },
+  {
+    path: 'router004',
+    component: Router004Component
+  },
+  {
+    path: 'router005/:id',
+    component: Router005Component
+  },
+  {
+    path: 'router006/:id',
+    component: Router006Component
+  },
+  {
+    path: 'router007',
+    component: Router007Component
+  },
+  {
+    path: 'router008',
+    component: Router008Component
+  },
+  {
+    path: 'redirectToRouter001',
+    redirectTo: '/router001', //重定向路由
+    pathMatch: 'full'
   },
   {
     path: '**',

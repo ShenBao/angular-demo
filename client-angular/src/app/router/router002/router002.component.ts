@@ -14,6 +14,18 @@ export class Router002Component implements OnInit {
     this.router.navigate(["/index"]);
   }
 
+  toRouter005() {
+    this.router.navigate(["/router005",666]);
+  }
+  toRouter007() {
+    this.router.navigate(['router007'], {  
+      queryParams: {  
+          id: 88,  
+          title: 'xiaobao'  
+      }  
+  });  
+  }
+
   ngOnInit() {
   }
 
