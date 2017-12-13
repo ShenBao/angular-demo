@@ -75,7 +75,10 @@
         <a [routerLink]="['/router012']">路由守卫（退出）：canDeactivate</a>
     </li>
     <li>
-        <a [routerLink]="['/router013']">路由守卫：resolve</a>
+        <a [routerLink]="['/router013', 1]">路由守卫（在进入组件前获取数据）：resolve</a>
+    </li>
+    <li>
+        <a [routerLink]="['/router013', 8]">路由守卫（在进入组件前获取数据）：resolve</a>
     </li>
 </ul>
 

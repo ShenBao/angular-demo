@@ -34,6 +34,7 @@ import { LoginGuard } from "./guard/login.guard";
 import { Router012Component } from './router/router012/router012.component';
 import { UnsavedGuard } from "./guard/unsaved.guard";
 import { Router013Component } from './router//router013/router013.component';
+import { ProductResolveGuard } from "./guard/product.guard";
 
 
 const routes: Routes = [
@@ -161,6 +162,13 @@ const routes: Routes = [
     path: 'router012',
     component: Router012Component,
     canDeactivate: [UnsavedGuard]
+  },
+  {
+    path: 'router013/:id',
+    component: Router013Component,
+    resolve: {
+      product: ProductResolveGuard
+    },
   },
   {
     path: '**',

@@ -8,7 +8,7 @@ import {ActivatedRoute} from "@angular/router";
 })
 export class Router009Children002Component implements OnInit {
 
-  private pId:number;
+  public pId:number;
 
   constructor(
     private routeInfo: ActivatedRoute

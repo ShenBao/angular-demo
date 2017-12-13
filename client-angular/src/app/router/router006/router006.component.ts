@@ -9,7 +9,7 @@ import 'rxjs/add/operator/switchMap';
 })
 export class Router006Component implements OnInit {
 
-  private paramsId: number;
+  public paramsId: number;
 
   constructor(private routeInfo: ActivatedRoute) {
 

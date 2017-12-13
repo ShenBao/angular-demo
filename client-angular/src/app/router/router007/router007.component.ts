@@ -9,9 +9,9 @@ import 'rxjs/add/operator/switchMap';
 })
 export class Router007Component implements OnInit {
 
-  private id: number;
+  public id: number;
 
-  private title: string;
+  public title: string;
 
   constructor(
     private activatedRoute: ActivatedRoute,   //这里需要注入ActivatedRoute模块  

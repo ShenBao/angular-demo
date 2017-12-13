@@ -41,6 +41,7 @@ import { LoginGuard } from "./guard/login.guard";
 import { Router012Component } from './router/router012/router012.component';
 import { UnsavedGuard } from "./guard/unsaved.guard";
 import { Router013Component } from './router//router013/router013.component';
+import { ProductResolveGuard } from "./guard/product.guard";
 
 
 @NgModule({
@@ -94,7 +95,8 @@ import { Router013Component } from './router//router013/router013.component';
       useValue: '/'
     },
     LoginGuard,
-    UnsavedGuard
+    UnsavedGuard,
+    ProductResolveGuard,
   ],
   bootstrap: [AppComponent]
 })
