@@ -45,10 +45,41 @@
         <a routerLink="/router003">在路由时传递数据</a>
     </li>
     <li>
-        <a routerLink="/router004"></a>
+        <a [routerLink]="['/router004']" [queryParams]="{id: 888888}">去router004查看结果</a>
     </li>
     <li>
-        <a routerLink="/router005"></a>
+        <a [routerLink]="['/router005', 88]">去router005查看结果</a>
     </li>
-    
+    <li>
+        <a [routerLink]="['/router006', 666]">去router006查看结果</a>
+    </li>
+    <li>
+        <a [routerLink]="['/router007']" [queryParams]="{id: 888, title: 'xiaobao'}">去router007查看结果</a>
+    </li>
+    <li>
+        <p (click)="toRouter007()">去router007，这个带有参数 queryParams</p>
+    </li>
+    <li>
+        <a [routerLink]="['/redirectToRouter001']">去redirectToRouter001，会重定向到/router001</a>
+    </li>
+    <li>
+        <a [routerLink]="['/router009']">子路由</a>
+    </li>
+    <li>
+        <a [routerLink]="['/router010']">辅助路由（注意观察url上参数的变化）</a>
+    </li>
+    <li>
+        <a [routerLink]="['/router011']">路由守卫（进入）：canActivate</a>
+    </li>
+    <li>
+        <a [routerLink]="['/router012']">路由守卫（退出）：canDeactivate</a>
+    </li>
+    <li>
+        <a [routerLink]="['/router013']">路由守卫：resolve</a>
+    </li>
 </ul>
+
+<br>
+<br>
+<br>
+<br>

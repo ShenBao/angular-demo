@@ -15,15 +15,15 @@ export class Router002Component implements OnInit {
   }
 
   toRouter005() {
-    this.router.navigate(["/router005",666]);
+    this.router.navigate(["/router005", 666]);
   }
   toRouter007() {
-    this.router.navigate(['router007'], {  
-      queryParams: {  
-          id: 88,  
-          title: 'xiaobao'  
-      }  
-  });  
+    this.router.navigate(['router007'], {
+      queryParams: {
+        id: 88,
+        title: 'xiaobao'
+      }
+    });
   }
 
   ngOnInit() {

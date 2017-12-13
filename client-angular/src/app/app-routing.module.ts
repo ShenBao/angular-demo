@@ -30,6 +30,10 @@ import { Router010Component } from './router/router010/router010.component';
 import { Router010children001Component } from './router/router010/router010children001/router010children001.component';
 import { Router010children002Component } from './router/router010/router010children002/router010children002.component';
 import { Router011Component } from './router/router011/router011.component';
+import { LoginGuard } from "./guard/login.guard";
+import { Router012Component } from './router/router012/router012.component';
+import { UnsavedGuard } from "./guard/unsaved.guard";
+import { Router013Component } from './router//router013/router013.component';
 
 
 const routes: Routes = [
@@ -150,7 +154,13 @@ const routes: Routes = [
   },
   {
     path: 'router011',
-    component: Router011Component
+    component: Router011Component,
+    canActivate: [LoginGuard],
+  },
+  {
+    path: 'router012',
+    component: Router012Component,
+    canDeactivate: [UnsavedGuard]
   },
   {
     path: '**',

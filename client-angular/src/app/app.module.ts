@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule }   from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { APP_BASE_HREF, LocationStrategy, HashLocationStrategy } from '@angular/common';
@@ -37,6 +37,10 @@ import { Router010Component } from './router/router010/router010.component';
 import { Router010children001Component } from './router/router010/router010children001/router010children001.component';
 import { Router010children002Component } from './router/router010/router010children002/router010children002.component';
 import { Router011Component } from './router/router011/router011.component';
+import { LoginGuard } from "./guard/login.guard";
+import { Router012Component } from './router/router012/router012.component';
+import { UnsavedGuard } from "./guard/unsaved.guard";
+import { Router013Component } from './router//router013/router013.component';
 
 
 @NgModule({
@@ -70,6 +74,8 @@ import { Router011Component } from './router/router011/router011.component';
     Router010children001Component,
     Router010children002Component,
     Router011Component,
+    Router012Component,
+    Router013Component,
   ],
   imports: [
     BrowserModule,
@@ -79,14 +85,16 @@ import { Router011Component } from './router/router011/router011.component';
   ],
   providers: [
     { // 开启基于Hash的路由模式
-      provide: LocationStrategy, 
+      provide: LocationStrategy,
       useClass: HashLocationStrategy
     },
     {
       provide: APP_BASE_HREF,
       // useValue: environment.APP_BASE_HREF
       useValue: '/'
-    }
+    },
+    LoginGuard,
+    UnsavedGuard
   ],
   bootstrap: [AppComponent]
 })
