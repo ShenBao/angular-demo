@@ -5,7 +5,9 @@ import { AppComponent } from './app.component';
 import { Code404Component } from './code404/code404.component';
 import { IndexComponent } from './index/index.component';
 import { ListComponent } from './list/list.component';
+
 import { Http001Component } from './http/http001/http001.component';
+
 import { Component001Component } from './component/component001/component001.component';
 import { Component002Component } from './component/component002/component002.component';
 import { Component003Component } from './component/component003/component003.component';
@@ -15,6 +17,10 @@ import { Component006Component } from './component/component006/component006.com
 import { Component007Component } from './component/component007/component007.component';
 import { Component008Component } from './component/component008/component008.component';
 import { Component009Component } from './component/component009/component009.component';
+import { Component010Component } from './component/component010/component010.component';
+import { Component011Component } from './component/component011/component011.component';
+import { Component012Component } from './component/component012/component012.component';
+
 import { Router001Component } from './router/router001/router001.component';
 import { Router002Component } from './router/router002/router002.component';
 import { Router003Component } from './router/router003/router003.component';
@@ -35,6 +41,10 @@ import { Router012Component } from './router/router012/router012.component';
 import { UnsavedGuard } from "./guard/unsaved.guard";
 import { Router013Component } from './router//router013/router013.component';
 import { ProductResolveGuard } from "./guard/product.guard";
+
+import { Observable001Component } from './rxjs/observable001/observable001.component';
+
+import { Pipe001Component } from './pipe/pipe001/pipe001.component';
 
 
 const routes: Routes = [
@@ -86,6 +96,18 @@ const routes: Routes = [
   {
     path: 'component009',
     component: Component009Component
+  },
+  {
+    path: 'component010',
+    component: Component010Component
+  },
+  {
+    path: 'component011',
+    component: Component011Component
+  },
+  {
+    path: 'component012',
+    component: Component012Component
   },
   {
     path: 'router001',
@@ -169,6 +191,14 @@ const routes: Routes = [
     resolve: {
       product: ProductResolveGuard
     },
+  },
+  {
+    path: 'observable001',
+    component: Observable001Component
+  },
+  {
+    path: 'pipe001',
+    component: Pipe001Component
   },
   {
     path: '**',

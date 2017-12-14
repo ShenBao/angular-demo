@@ -19,7 +19,7 @@ export class ProductResolveGuard implements Resolve<Router013Component> {
       let p = new Product(88, 'ooxx');
       return p;
     } else {
-      this.router.navigate(['/index']);
+      this.router.navigate(['/router001']);
     }
 
   }

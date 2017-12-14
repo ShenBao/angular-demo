@@ -1,3 +1,16 @@
-<p>
-  component009 works!
-</p>
+<h1>
+  DOM属性绑定
+</h1>
+
+<img [src]="imgUrl" alt="这是我的头像" width="120">
+<br>
+<img src="{{imgUrl}}" alt="这是我的头像" width="120">
+<br>
+<input type="text" value="ziWei" (input)="doOnInput($event)">
+<br>
+<button disabled>这个是禁止点击的</button>
+<br>
+<button disabled="false">点击呀，就是点不动</button>
+<br>
+<input type="text" [value]="name">
+
