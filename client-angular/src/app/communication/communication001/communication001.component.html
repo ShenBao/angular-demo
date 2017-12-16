@@ -1,0 +1,11 @@
+<h1>
+  父子组件：输入属性
+</h1>
+
+<p>
+  <input type="number" placeholder="请输入Id" [(ngModel)]="id">
+  <input type="text" placeholder="请输入姓名" [(ngModel)]="name">
+</p>
+<p>{{str}}</p>
+<br>
+<app-communication001children [id]="id" [name]="name" [str]="str"></app-communication001children>

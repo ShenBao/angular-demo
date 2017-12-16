@@ -52,6 +52,17 @@ import { Observable001Component } from './rxjs/observable001/observable001.compo
 import { Observable002Component } from './rxjs/observable002/observable002.component';
 import { Pipe001Component } from './pipe/pipe001/pipe001.component';
 import { CustomPipe } from './pipe/custom.pipe';
+import { Communication001Component } from './communication/communication001/communication001.component';
+import { Communication001childrenComponent } from './communication/communication001/communication001children/communication001children.component';
+import { Communication002Component } from './communication/communication002/communication002.component';
+import { Communication002childrenComponent } from './communication/communication002/communication002children/communication002children.component';
+import { Communication003Component } from './communication/communication003/communication003.component';
+import { Communication003childrenComponent } from './communication/communication003/communication003children/communication003children.component';
+import { Communication003children002Component } from './communication/communication003/communication003children002/communication003children002.component';
+import { Lifecycle001Component } from './lifecycle/lifecycle001/lifecycle001.component';
+import { Lifecycle001childrenComponent } from './lifecycle/lifecycle001/lifecycle001children/lifecycle001children.component';
+import { Lifecycle002Component } from './lifecycle/lifecycle002/lifecycle002.component';
+import { Lifecycle003Component } from './lifecycle/lifecycle003/lifecycle003.component';
 
 
 @NgModule({
@@ -94,6 +105,17 @@ import { CustomPipe } from './pipe/custom.pipe';
     Observable002Component,
     Pipe001Component,
     CustomPipe,
+    Communication001Component,
+    Communication001childrenComponent,
+    Communication002Component,
+    Communication002childrenComponent,
+    Communication003Component,
+    Communication003childrenComponent,
+    Communication003children002Component,
+    Lifecycle001Component,
+    Lifecycle001childrenComponent,
+    Lifecycle002Component,
+    Lifecycle003Component,
   ],
   imports: [
     BrowserModule,

@@ -46,6 +46,14 @@ import { Observable001Component } from './rxjs/observable001/observable001.compo
 
 import { Pipe001Component } from './pipe/pipe001/pipe001.component';
 
+import { Communication001Component } from './communication/communication001/communication001.component';
+import { Communication002Component } from './communication/communication002/communication002.component';
+import { Communication003Component } from './communication/communication003/communication003.component';
+
+import { Lifecycle001Component } from './lifecycle/lifecycle001/lifecycle001.component';
+import { Lifecycle002Component } from './lifecycle/lifecycle002/lifecycle002.component';
+import { Lifecycle003Component } from './lifecycle/lifecycle003/lifecycle003.component';
+
 
 const routes: Routes = [
   {
@@ -199,6 +207,30 @@ const routes: Routes = [
   {
     path: 'pipe001',
     component: Pipe001Component
+  },
+  {
+    path: 'communication001',
+    component: Communication001Component
+  },
+  {
+    path: 'communication002',
+    component: Communication002Component
+  },
+  {
+    path: 'communication003',
+    component: Communication003Component
+  },
+  {
+    path: 'lifecycle001',
+    component: Lifecycle001Component
+  },
+  {
+    path: 'lifecycle002',
+    component: Lifecycle002Component
+  },
+  {
+    path: 'lifecycle003',
+    component: Lifecycle003Component
   },
   {
     path: '**',
