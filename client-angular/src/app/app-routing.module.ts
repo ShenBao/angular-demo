@@ -53,6 +53,11 @@ import { Communication003Component } from './communication/communication003/comm
 import { Lifecycle001Component } from './lifecycle/lifecycle001/lifecycle001.component';
 import { Lifecycle002Component } from './lifecycle/lifecycle002/lifecycle002.component';
 import { Lifecycle003Component } from './lifecycle/lifecycle003/lifecycle003.component';
+import { Lifecycle004Component } from './lifecycle/lifecycle004/lifecycle004.component';
+import { Lifecycle005Component } from './lifecycle/lifecycle005/lifecycle005.component';
+import { Lifecycle006Component } from './lifecycle/lifecycle006/lifecycle006.component';
+import { Lifecycle006children001Component } from './lifecycle/lifecycle006/lifecycle006children001/lifecycle006children001.component';
+import { Lifecycle006children002Component } from './lifecycle/lifecycle006/lifecycle006children002/lifecycle006children002.component';
 
 
 const routes: Routes = [
@@ -115,6 +120,10 @@ const routes: Routes = [
   },
   {
     path: 'component012',
+    component: Component012Component
+  },
+  {
+    path: 'component013',
     component: Component012Component
   },
   {
@@ -231,6 +240,28 @@ const routes: Routes = [
   {
     path: 'lifecycle003',
     component: Lifecycle003Component
+  },
+  {
+    path: 'lifecycle004',
+    component: Lifecycle004Component
+  },
+  {
+    path: 'lifecycle005',
+    component: Lifecycle005Component
+  },
+  {
+    path: 'lifecycle006',
+    component: Lifecycle006Component,
+    children: [
+      {
+        path: '',
+        component: Lifecycle006children001Component,
+      },
+      {
+        path: 'children2',
+        component: Lifecycle006children002Component
+      }
+    ]
   },
   {
     path: '**',

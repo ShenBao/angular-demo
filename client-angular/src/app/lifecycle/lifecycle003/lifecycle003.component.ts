@@ -7,6 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Lifecycle003Component implements OnInit {
 
+  // 可变对象与不可变对象
+  // 内存中的存储
+
+  greeting: string = "Hello";
+
+  user: { name: string } = { name: "Tom" };
+
+
   constructor() { }
 
   ngOnInit() {
