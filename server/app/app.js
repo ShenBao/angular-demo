@@ -16,8 +16,8 @@ app.get('/api/stock', function (req, res) {
 app.get('/api/stock/:id', function (req, res) {
     res.json(stocks.find(function (stock) { return stock.id == req.params.id; }));
 });
-var server = app.listen(8086, 'localhost', function () {
-    console.log('服务器已启动,地址是:http://localhost:8086');
+var server = app.listen(8000, 'localhost', function () {
+    console.log('服务器已启动,地址是:http://localhost:8000');
 });
 var subscriptions = new Set();
 var wsServer = new ws_1.Server({ port: 8085 });

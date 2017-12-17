@@ -22,8 +22,8 @@ app.get('/api/stock/:id', (req, res) => {
     res.json(stocks.find(stock => stock.id == req.params.id));
 });
 
-const server = app.listen(8086, 'localhost', () => {
-    console.log('服务器已启动,地址是:http://localhost:8086');
+const server = app.listen(8000, 'localhost', () => {
+    console.log('服务器已启动,地址是:http://localhost:8000');
 });
 
 var subscriptions = new Set<any>();

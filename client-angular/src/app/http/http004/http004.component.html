@@ -1,0 +1,12 @@
+<h1>
+  WebSocket的简单实例
+</h1>
+
+<button (click)="sendMessageToServer()">向服务器发消息!</button>
+<br>
+
+<ul>
+  <li *ngFor="let result of data">
+    {{ result | json }}
+  </li>
+</ul>

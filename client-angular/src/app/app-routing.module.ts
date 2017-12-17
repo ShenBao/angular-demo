@@ -6,7 +6,11 @@ import { Code404Component } from './code404/code404.component';
 import { IndexComponent } from './index/index.component';
 import { ListComponent } from './list/list.component';
 
+import { Http000Component } from './http/http000/http000.component';
 import { Http001Component } from './http/http001/http001.component';
+import { Http002Component } from './http/http002/http002.component';
+import { Http003Component } from './http/http003/http003.component';
+import { Http004Component } from './http/http004/http004.component';
 
 import { Component001Component } from './component/component001/component001.component';
 import { Component002Component } from './component/component002/component002.component';
@@ -76,8 +80,24 @@ const routes: Routes = [
     component: IndexComponent
   },
   {
+    path: 'http000',
+    component: Http000Component
+  },
+  {
     path: 'http001',
     component: Http001Component
+  },
+  {
+    path: 'http002',
+    component: Http002Component
+  },
+  {
+    path: 'http003',
+    component: Http003Component
+  },
+  {
+    path: 'http004',
+    component: Http004Component
   },
   {
     path: 'component001',

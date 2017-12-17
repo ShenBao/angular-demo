@@ -13,7 +13,13 @@ import { Code404Component } from './code404/code404.component';
 import { IndexComponent } from './index/index.component';
 import { ListComponent } from './list/list.component';
 
+import { Http000Component } from './http/http000/http000.component';
 import { Http001Component } from './http/http001/http001.component';
+import { Http002Component } from './http/http002/http002.component';
+import { Http003Component } from './http/http003/http003.component';
+import { Http004Component } from './http/http004/http004.component';
+import { WebSocketService } from "./http/shared/web-socket.service";
+
 
 import { Component001Component } from './component/component001/component001.component';
 import { Component002Component } from './component/component002/component002.component';
@@ -86,6 +92,7 @@ import { Form005Component } from './form/form005/form005.component';
 import { MobileValidatorDirective } from './form/directives/mobile-validator.directive';
 import { EqualValidatorDirective } from './form/directives/equal-validator.directive';
 
+
 @NgModule({
   declarations: [
     MobileValidatorDirective,
@@ -155,6 +162,10 @@ import { EqualValidatorDirective } from './form/directives/equal-validator.direc
     Form003Component,
     Form004Component,
     Form005Component,
+    Http000Component,
+    Http002Component,
+    Http003Component,
+    Http004Component,
   ],
   imports: [
     BrowserModule,
@@ -176,6 +187,7 @@ import { EqualValidatorDirective } from './form/directives/equal-validator.direc
     LoginGuard,
     UnsavedGuard,
     ProductResolveGuard,
+    WebSocketService,
   ],
   bootstrap: [AppComponent]
 })
