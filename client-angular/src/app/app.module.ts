@@ -77,10 +77,19 @@ import { Lifecycle005children002Component } from './lifecycle/lifecycle005/lifec
 import { Lifecycle006Component } from './lifecycle/lifecycle006/lifecycle006.component';
 import { Lifecycle006children001Component } from './lifecycle/lifecycle006/lifecycle006children001/lifecycle006children001.component';
 import { Lifecycle006children002Component } from './lifecycle/lifecycle006/lifecycle006children002/lifecycle006children002.component';
+import { Form001Component } from './form/form001/form001.component';
+import { Form002Component } from './form/form002/form002.component';
+import { Form003Component } from './form/form003/form003.component';
+import { Form004Component } from './form/form004/form004.component';
+import { Form005Component } from './form/form005/form005.component';
 
+import { MobileValidatorDirective } from './form/directives/mobile-validator.directive';
+import { EqualValidatorDirective } from './form/directives/equal-validator.directive';
 
 @NgModule({
   declarations: [
+    MobileValidatorDirective,
+    EqualValidatorDirective,
     AppComponent,
     Code404Component,
     IndexComponent,
@@ -141,6 +150,11 @@ import { Lifecycle006children002Component } from './lifecycle/lifecycle006/lifec
     Lifecycle006Component,
     Lifecycle006children001Component,
     Lifecycle006children002Component,
+    Form001Component,
+    Form002Component,
+    Form003Component,
+    Form004Component,
+    Form005Component,
   ],
   imports: [
     BrowserModule,

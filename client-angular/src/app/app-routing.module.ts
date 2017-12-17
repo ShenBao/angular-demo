@@ -59,6 +59,11 @@ import { Lifecycle006Component } from './lifecycle/lifecycle006/lifecycle006.com
 import { Lifecycle006children001Component } from './lifecycle/lifecycle006/lifecycle006children001/lifecycle006children001.component';
 import { Lifecycle006children002Component } from './lifecycle/lifecycle006/lifecycle006children002/lifecycle006children002.component';
 
+import { Form001Component } from './form/form001/form001.component';
+import { Form002Component } from './form/form002/form002.component';
+import { Form003Component } from './form/form003/form003.component';
+import { Form004Component } from './form/form004/form004.component';
+import { Form005Component } from './form/form005/form005.component';
 
 const routes: Routes = [
   {
@@ -262,6 +267,26 @@ const routes: Routes = [
         component: Lifecycle006children002Component
       }
     ]
+  },
+  {
+    path: 'form001',
+    component: Form001Component
+  },
+  {
+    path: 'form002',
+    component: Form002Component
+  },
+  {
+    path: 'form003',
+    component: Form003Component
+  },
+  {
+    path: 'form004',
+    component: Form004Component
+  },
+  {
+    path: 'form005',
+    component: Form005Component
   },
   {
     path: '**',
