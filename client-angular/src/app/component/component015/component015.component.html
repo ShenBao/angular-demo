@@ -1,0 +1,38 @@
+<h1>
+  todolist
+</h1>
+
+<br>
+
+<br>
+
+<input type="text" [(ngModel)]='username' (keydown)="addData($event)">
+
+<br>
+<br>
+
+<h2>正在进行</h2>
+
+<br>
+<br>
+
+<ul>
+  <li *ngFor="let item of list;let i =index;" [hidden]="item.status==2">
+    <button (click)="changeData(i)">改变数据</button>{{item.status}}-- {{item.username}}-------
+    <button (click)="deleteData(i)">删除-</button>
+  </li>
+</ul>
+
+<br>
+<br>
+
+<h2>已经完成</h2>
+<br>
+<br>
+
+<ul>
+  <li *ngFor="let item of list;let i =index;" [hidden]="item.status==1">
+    <button (click)="changeData(i)">改变数据</button>{{item.status}}-- {{item.username}}-------
+    <button (click)="deleteData(i)">删除-</button>
+  </li>
+</ul>

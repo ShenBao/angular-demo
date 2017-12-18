@@ -24,6 +24,9 @@ import { Component009Component } from './component/component009/component009.com
 import { Component010Component } from './component/component010/component010.component';
 import { Component011Component } from './component/component011/component011.component';
 import { Component012Component } from './component/component012/component012.component';
+import { Component013Component } from './component/component013/component013.component';
+import { Component014Component } from './component/component014/component014.component';
+import { Component015Component } from './component/component015/component015.component';
 
 import { Router001Component } from './router/router001/router001.component';
 import { Router002Component } from './router/router002/router002.component';
@@ -68,6 +71,9 @@ import { Form002Component } from './form/form002/form002.component';
 import { Form003Component } from './form/form003/form003.component';
 import { Form004Component } from './form/form004/form004.component';
 import { Form005Component } from './form/form005/form005.component';
+
+import { Ts001Component } from './ts/ts001/ts001.component';
+
 
 const routes: Routes = [
   {
@@ -149,7 +155,15 @@ const routes: Routes = [
   },
   {
     path: 'component013',
-    component: Component012Component
+    component: Component013Component
+  },
+  {
+    path: 'component014',
+    component: Component014Component
+  },
+  {
+    path: 'component015',
+    component: Component015Component
   },
   {
     path: 'router001',
@@ -307,6 +321,10 @@ const routes: Routes = [
   {
     path: 'form005',
     component: Form005Component
+  },
+  {
+    path: 'ts001',
+    component: Ts001Component
   },
   {
     path: '**',

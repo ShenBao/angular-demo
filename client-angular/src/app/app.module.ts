@@ -34,6 +34,8 @@ import { Component010Component } from './component/component010/component010.com
 import { Component011Component } from './component/component011/component011.component';
 import { Component012Component } from './component/component012/component012.component';
 import { Component013Component } from './component/component013/component013.component';
+import { Component014Component } from './component/component014/component014.component';
+import { Component015Component } from './component/component015/component015.component';
 
 import { Router001Component } from './router/router001/router001.component';
 import { Router002Component } from './router/router002/router002.component';
@@ -91,6 +93,8 @@ import { Form005Component } from './form/form005/form005.component';
 
 import { MobileValidatorDirective } from './form/directives/mobile-validator.directive';
 import { EqualValidatorDirective } from './form/directives/equal-validator.directive';
+import { Ts001Component } from './ts/ts001/ts001.component';
+
 
 
 @NgModule({
@@ -166,6 +170,9 @@ import { EqualValidatorDirective } from './form/directives/equal-validator.direc
     Http002Component,
     Http003Component,
     Http004Component,
+    Ts001Component,
+    Component014Component,
+    Component015Component,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,58 @@
+<h1>
+  杂七杂八的练习
+</h1>
+
+<br>
+
+{{msg}}
+
+<br>
+
+<br>
+
+
+<button (click)='getMsg()'>执行方法</button>
+
+
+<hr>
+
+<br>
+
+{{username}}
+
+
+
+<br>
+<button (click)='setName()'>执行方法改变username</button>
+
+
+
+<br><br><br>
+
+<!--条件判断语句-->
+
+<div *ngIf="flag">flag=true的情况下面显示1</div>
+
+<br>
+
+<button (click)='flag=!flag'>执行方法改变flag</button>
+
+<br><br>
+
+<input type="text" (keyup)='keyupFn($event)'>
+
+<br>
+
+<button (click)='run($event)'>事件对象</button>
+<hr>
+
+<br><br>
+
+<!--双向数据绑定-->
+<input type="text" [(ngModel)]="search" />
+
+{{search}}
+
+<br>
+<button (click)='getSearch()'>获取input 的值</button>
+
