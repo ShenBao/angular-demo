@@ -2,9 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { HttpModule, JsonpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
 import { APP_BASE_HREF, LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { environment } from '../environments/environment.prod';
+
+
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -19,7 +22,8 @@ import { Http002Component } from './http/http002/http002.component';
 import { Http003Component } from './http/http003/http003.component';
 import { Http004Component } from './http/http004/http004.component';
 import { WebSocketService } from "./http/shared/web-socket.service";
-
+import { Http005Component } from './http/http005/http005.component';
+import { Http006Component } from './http/http006/http006.component';
 
 import { Component001Component } from './component/component001/component001.component';
 import { Component002Component } from './component/component002/component002.component';
@@ -57,6 +61,7 @@ import { Router012Component } from './router/router012/router012.component';
 import { UnsavedGuard } from "./guard/unsaved.guard";
 import { Router013Component } from './router//router013/router013.component';
 import { ProductResolveGuard } from "./guard/product.guard";
+
 import { Observable001Component } from './rxjs/observable001/observable001.component';
 import { Observable002Component } from './rxjs/observable002/observable002.component';
 
@@ -85,6 +90,7 @@ import { Lifecycle005children002Component } from './lifecycle/lifecycle005/lifec
 import { Lifecycle006Component } from './lifecycle/lifecycle006/lifecycle006.component';
 import { Lifecycle006children001Component } from './lifecycle/lifecycle006/lifecycle006children001/lifecycle006children001.component';
 import { Lifecycle006children002Component } from './lifecycle/lifecycle006/lifecycle006children002/lifecycle006children002.component';
+
 import { Form001Component } from './form/form001/form001.component';
 import { Form002Component } from './form/form002/form002.component';
 import { Form003Component } from './form/form003/form003.component';
@@ -93,7 +99,13 @@ import { Form005Component } from './form/form005/form005.component';
 
 import { MobileValidatorDirective } from './form/directives/mobile-validator.directive';
 import { EqualValidatorDirective } from './form/directives/equal-validator.directive';
+
 import { Ts001Component } from './ts/ts001/ts001.component';
+
+import { StorageService } from './service/service.service';
+import { Service001Component } from './service/service001/service001.component';
+import { Service002Component } from './service/service002/service002.component';
+
 
 
 
@@ -173,13 +185,19 @@ import { Ts001Component } from './ts/ts001/ts001.component';
     Ts001Component,
     Component014Component,
     Component015Component,
+    Service001Component,
+    Service002Component,
+    Http005Component,
+    Http006Component,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    AppRoutingModule
+    HttpModule,
+    JsonpModule,
+    AppRoutingModule,
   ],
   providers: [
     { // 开启基于Hash的路由模式
@@ -195,6 +213,7 @@ import { Ts001Component } from './ts/ts001/ts001.component';
     UnsavedGuard,
     ProductResolveGuard,
     WebSocketService,
+    StorageService,
   ],
   bootstrap: [AppComponent]
 })

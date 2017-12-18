@@ -45,7 +45,7 @@ export class Component015Component implements OnInit {
   
     changeData(key){ /*改变状态*/
   
-        this.list[key].status=2
+        this.list[key].status = this.list[key].status == 1 ? 2 : 1;
     }
   
 }

@@ -11,6 +11,8 @@ import { Http001Component } from './http/http001/http001.component';
 import { Http002Component } from './http/http002/http002.component';
 import { Http003Component } from './http/http003/http003.component';
 import { Http004Component } from './http/http004/http004.component';
+import { Http005Component } from './http/http005/http005.component';
+import { Http006Component } from './http/http006/http006.component';
 
 import { Component001Component } from './component/component001/component001.component';
 import { Component002Component } from './component/component002/component002.component';
@@ -74,6 +76,9 @@ import { Form005Component } from './form/form005/form005.component';
 
 import { Ts001Component } from './ts/ts001/ts001.component';
 
+import { Service001Component } from './service/service001/service001.component';
+import { Service002Component } from './service/service002/service002.component';
+
 
 const routes: Routes = [
   {
@@ -84,6 +89,14 @@ const routes: Routes = [
   {
     path: 'index',
     component: IndexComponent
+  },
+  {
+    path: 'service001',
+    component: Service001Component
+  },
+  {
+    path: 'service002',
+    component: Service002Component
   },
   {
     path: 'http000',
@@ -104,6 +117,14 @@ const routes: Routes = [
   {
     path: 'http004',
     component: Http004Component
+  },
+  {
+    path: 'http005',
+    component: Http005Component
+  },
+  {
+    path: 'http006',
+    component: Http006Component
   },
   {
     path: 'component001',
