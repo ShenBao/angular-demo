@@ -9,3 +9,13 @@
 <p>name: {{name}}</p>
 <br>
 <p>{{str}}</p>
+
+<br>
+
+
+<button (click)="toChildrenClickHandler()">这是父组件的方法</button>
+
+<br>
+<input placeholder="请输入toSend" [(ngModel)]="toSend">
+<p>{{toSend}}</p>
+<button (click)="toSendFHandler()">传值</button>

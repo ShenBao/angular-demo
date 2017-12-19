@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from "@angular/router";
+import { Router, NavigationExtras } from "@angular/router";
 
 @Component({
   selector: 'app-router002',
@@ -15,6 +15,7 @@ export class Router002Component implements OnInit {
   }
 
   toRouter005() {
+    // 动态路由
     this.router.navigate(["/router005", 666]);
   }
   toRouter007() {
@@ -24,6 +25,19 @@ export class Router002Component implements OnInit {
         title: 'xiaobao'
       }
     });
+  }
+
+  toRouter015() {
+
+    //跳转路由get传值
+    let navigationExtras: NavigationExtras = {
+      queryParams: { 'id': 8888888, 'name': 'ShenBao' }
+      // fragment: 'anchor'   //锚点    参考官方文档
+    };
+
+    //配置参数
+    this.router.navigate(['/router015'], navigationExtras);
+
   }
 
   ngOnInit() {

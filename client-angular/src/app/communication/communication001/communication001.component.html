@@ -8,4 +8,11 @@
 </p>
 <p>{{str}}</p>
 <br>
-<app-communication001children [id]="id" [name]="name" [str]="str"></app-communication001children>
+<app-communication001children
+  [id]="id"
+  [name]="name"
+  [str]="str"
+  [toChildrenClickHandler]="clickHandler"
+  [toSendDataHandler]="sendDataHandler"
+  >
+</app-communication001children>

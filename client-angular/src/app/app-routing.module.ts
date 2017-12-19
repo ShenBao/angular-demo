@@ -50,6 +50,10 @@ import { Router012Component } from './router/router012/router012.component';
 import { UnsavedGuard } from "./guard/unsaved.guard";
 import { Router013Component } from './router//router013/router013.component';
 import { ProductResolveGuard } from "./guard/product.guard";
+import { Router014Component } from './router/router014/router014.component';
+import { Router014children001Component } from './router/router014/router014children001/router014children001.component';
+import { Router014children002Component } from './router/router014/router014children002/router014children002.component';
+import { Router15Component } from './router/router15/router15.component';
 
 import { Observable001Component } from './rxjs/observable001/observable001.component';
 
@@ -58,6 +62,7 @@ import { Pipe001Component } from './pipe/pipe001/pipe001.component';
 import { Communication001Component } from './communication/communication001/communication001.component';
 import { Communication002Component } from './communication/communication002/communication002.component';
 import { Communication003Component } from './communication/communication003/communication003.component';
+import { Communication004Component } from './communication/communication004/communication004.component';
 
 import { Lifecycle001Component } from './lifecycle/lifecycle001/lifecycle001.component';
 import { Lifecycle002Component } from './lifecycle/lifecycle002/lifecycle002.component';
@@ -270,6 +275,33 @@ const routes: Routes = [
     },
   },
   {
+    path: 'router014',
+    component: Router014Component,
+    children: [
+      {
+        path: '',
+        redirectTo: 'children1', //重定向路由
+        pathMatch: 'full'
+      },
+      {
+        path: 'children1',
+        component: Router014children001Component,
+      },
+      {
+        path: 'children2',
+        component: Router014children002Component
+      },
+      {   /*匹配不到路由的时候加载的组件*/
+        path: '**',  /*任意的路由*/
+        component: Code404Component
+      }
+    ]
+  },
+  {
+    path: 'router015',
+    component: Router15Component,
+  },
+  {
     path: 'observable001',
     component: Observable001Component
   },
@@ -288,6 +320,10 @@ const routes: Routes = [
   {
     path: 'communication003',
     component: Communication003Component
+  },
+  {
+    path: 'communication004',
+    component: Communication004Component
   },
   {
     path: 'lifecycle001',

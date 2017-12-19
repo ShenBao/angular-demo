@@ -1,0 +1,16 @@
+<h1>
+  选中路由：routerLinkActive
+</h1>
+
+<br>
+
+<ul>
+  <li>
+    <a [routerLink]="['./']" routerLinkActive="active">默认路由</a>
+  </li>
+  <li>
+    <a [routerLink]="['./children2']" routerLinkActive="active">去children2</a>
+  </li>
+</ul>
+
+<router-outlet></router-outlet>

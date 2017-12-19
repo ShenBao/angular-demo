@@ -61,6 +61,9 @@ import { Router012Component } from './router/router012/router012.component';
 import { UnsavedGuard } from "./guard/unsaved.guard";
 import { Router013Component } from './router//router013/router013.component';
 import { ProductResolveGuard } from "./guard/product.guard";
+import { Router014Component } from './router/router014/router014.component';
+import { Router014children001Component } from './router/router014/router014children001/router014children001.component';
+import { Router014children002Component } from './router/router014/router014children002/router014children002.component';
 
 import { Observable001Component } from './rxjs/observable001/observable001.component';
 import { Observable002Component } from './rxjs/observable002/observable002.component';
@@ -75,6 +78,8 @@ import { Communication002childrenComponent } from './communication/communication
 import { Communication003Component } from './communication/communication003/communication003.component';
 import { Communication003childrenComponent } from './communication/communication003/communication003children/communication003children.component';
 import { Communication003children002Component } from './communication/communication003/communication003children002/communication003children002.component';
+import { Communication004Component } from './communication/communication004/communication004.component';
+import { Communication004childrenComponent } from './communication/communication004/communication004children/communication004children.component';
 
 import { Lifecycle001Component } from './lifecycle/lifecycle001/lifecycle001.component';
 import { Lifecycle001childrenComponent } from './lifecycle/lifecycle001/lifecycle001children/lifecycle001children.component';
@@ -105,6 +110,7 @@ import { Ts001Component } from './ts/ts001/ts001.component';
 import { StorageService } from './service/service.service';
 import { Service001Component } from './service/service001/service001.component';
 import { Service002Component } from './service/service002/service002.component';
+import { Router15Component } from './router/router15/router15.component';
 
 
 
@@ -144,6 +150,7 @@ import { Service002Component } from './service/service002/service002.component';
     Router011Component,
     Router012Component,
     Router013Component,
+    Router014Component,
     Component010Component,
     Component011Component,
     Component012Component,
@@ -189,6 +196,12 @@ import { Service002Component } from './service/service002/service002.component';
     Service002Component,
     Http005Component,
     Http006Component,
+    Communication004Component,
+    Communication004childrenComponent,
+    Router014children001Component,
+    Router014children002Component,
+    Router15Component,
+    
   ],
   imports: [
     BrowserModule,

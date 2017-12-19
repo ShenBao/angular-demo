@@ -11,7 +11,15 @@ export class Communication001Component implements OnInit {
 
   name: string = 'XiaoBao';
 
-  str: string = '这个值在子组件1秒后变化'
+  str: string = '这个值在子组件1秒后变化';
+
+  clickHandler(){
+    console.log('这是父组件定义的，传给子组件进行执行');
+  }
+
+  sendDataHandler(data){
+    console.log(data);
+  }
 
   constructor() { }
 

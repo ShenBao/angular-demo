@@ -16,6 +16,18 @@ export class Communication001childrenComponent implements OnInit {
   @Input()
   str: string;
 
+  @Input()
+  toChildrenClickHandler;
+
+  @Input()
+  toSendDataHandler;
+
+  toSend: string = '这是要传给父组件的数据'
+
+  toSendFHandler(){
+    this.toSendDataHandler(this.toSend);
+  }
+
   constructor() {
     let i = 0;
     setInterval(()=>{
