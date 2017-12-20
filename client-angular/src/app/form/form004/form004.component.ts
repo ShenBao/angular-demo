@@ -30,7 +30,6 @@ export class Form004Component implements OnInit {
       if(this.formModel.valid){
         console.log(this.formModel.value);
       }
-  
     }
   
 

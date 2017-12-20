@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Ts001Component implements OnInit {
 
-  tiltle = '你好angular4.x';  /*属性*/
+  title = '你好angular4.x';  /*属性*/
 
   msg: any;  /*另一种定义属性的方法*/
 

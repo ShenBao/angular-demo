@@ -1,33 +1,32 @@
-
 <h1>
-  模板式组件
+    模板式组件
 </h1>
 <br>
 
 <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm.value)">
-  使用了ngForm时，ngModel是不需要添加方括号的，需要添加name
-  <div ngModelGroup="userInfo">
-    <div>用户名:
-      <input ngModel #username="ngModel" minlength="6" name="username" type="text">
+    使用了ngForm时，ngModel是不需要添加方括号的，需要添加name
+    <div ngModelGroup="userInfo">
+        <div>用户名:
+            <input ngModel #username="ngModel" minlength="6" name="username" type="text">
+        </div>
+        <div>手机号:
+            <input ngModel name="mobile" type="number">
+        </div>
     </div>
-    <div>手机号:
-      <input ngModel name="mobile" type="number">
+    <div ngModelGroup="passwordsGroup">
+        <div>密码:
+            <input ngModel name="password" type="password" minlength="6">
+        </div>
+        <div>确认密码:
+            <input ngModel name="pconfirm" type="password">
+        </div>
     </div>
-  </div>
-  <div ngModelGroup="passwordsGroup">
-    <div>密码:
-      <input ngModel name="password" type="password" minlength="6">
-    </div>
-    <div>确认密码:
-      <input ngModel name="pconfirm" type="password">
-    </div>
-  </div>
-  <button type="submit">注册</button>
+    <button type="submit">注册</button>
 </form>
 
 <div>
-  {{myForm.value | json}}
+    {{myForm.value | json}}
 </div>
 <div>
-  username:{{username.value}}
+    username:{{username.value}}
 </div>
