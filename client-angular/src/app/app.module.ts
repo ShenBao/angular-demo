@@ -111,6 +111,7 @@ import { StorageService } from './service/service.service';
 import { Service001Component } from './service/service001/service001.component';
 import { Service002Component } from './service/service002/service002.component';
 import { Router15Component } from './router/router15/router15.component';
+import { Http007Component } from './http/http007/http007.component';
 
 
 
@@ -201,6 +202,7 @@ import { Router15Component } from './router/router15/router15.component';
     Router014children001Component,
     Router014children002Component,
     Router15Component,
+    Http007Component,
     
   ],
   imports: [

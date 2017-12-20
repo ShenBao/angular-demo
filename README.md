@@ -4,6 +4,7 @@
 
 [点击查看在线示例](https://shenbao.github.io/angular-demo)
 
+<img src="./shot/QR-code.png" width="150" />
 
 
 

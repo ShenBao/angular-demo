@@ -1,25 +1,86 @@
 <h1>
-  管道基础
+    管道基础
 </h1>
 
 <br>
+<pre>
+  管道	类型	功能
+  DatePipe	纯管道	日期格式化
+  JsonPipe	非纯管道	使用JSON.stringify()将对象转成json字符串
+  UpperCasePipe	纯管道	将文本中的字母全部转在大写
+  LowerCasePipe	纯管道	将文本中的字母全部转成小写
+  DecimalPipe	纯管道	数值格式化
+  CurrencyPipe	纯管道	货币格式化
+  PercentPipe	纯管道	百分比格式化
+  SlicePipe	非纯管道	数组或字符串取切割
+</pre>
 
-<p>{{date | date}}</p>
-<p>{{date | date | uppercase}}</p>
-<p>{{date | date | lowercase}}</p>
-<p>{{date | date:'yyyy-MM-dd hh:mm:ss'}}</p>
-<p>{{date | date:'yyyy年MM月dd日 HH:mm:ss'}}</p>
+
+
 <br>
-<p style="color:red;">{{nowDate | date:'yyyy-MM-dd hh:mm:ss'}}</p>
-
+<h4 class="red">大小写转换管道</h4>
+<p>将字符串转换为大写{{str | uppercase}}</p>
+<p>将字符串转换为小写{{str | lowercase}}</p>
+<p>{{ 'Angular' | uppercase }}</p>
+<p>{{ 'Angular' | lowercase }}</p>
+<p ngNonBindable>{{ 'Angular' | uppercase }}</p>
 
 <br>
+<h4 class="red">日期管道</h4>
+<p>{{ date | date: 'shortTime' }}</p>
+<p>{{ date | date }}</p>
+<p>{{ date | date | uppercase }}</p>
+<p>{{ date | date | lowercase }}</p>
+<p>{{ date | date:'yyyy-MM-dd hh:mm:ss' }}</p>
+<p>{{ date | date:'yyyy年MM月dd日 HH:mm:ss' }}</p>
+<p style="color:red;">{{nowDate | date:'yyyy-MM-dd hh:mm:ss' }}</p>
 
+<br>
+<h4 class="red">小数管道</h4>
 <p>圆周率:{{pi}}</p>
 <p>圆周率:{{pi | number:'2.2-2'}}</p>
 <p>圆周率:{{pi | number:'1.1-4'}}</p>
 
+<br>
+<h4 class="red">货币管道</h4>
+<p>{{a | currency:'USD':false}}</p>
+<p>{{b | currency:'USD':true:'4.2-2'}}</p>
+<p>{{b| currency:'CNY':false:'1.1-2' }}</p>
 
 <br>
-<p>自定义管道实现：{{size | custom:'2'}}</p>
+<h4 class="red">slice</h4>
+<p> {{str| slice:1:3 }}</p>
+<p> {{str| slice:0:4 }}</p>
 
+<br>
+<h4 class="red">百分比</h4>
+<p>A 变量：{{ percentA | percent }}</p>
+<p>B 变量：{{ percentB | percent: '3.1-3' }}</p>
+
+<br>
+<h4 class="red">JSON</h4>
+<p>{{ obj | json }}</p>
+
+<br>
+<h4 class="red">自定义管道实现</h4>
+<p>{{size | custom:'2'}}</p>
+
+
+<br>
+<h4 class="red">管道链</h4>
+<p>{{ 'semlinker' | slice:0:5 | uppercase }}</p>
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
