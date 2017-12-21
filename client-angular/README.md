@@ -21,6 +21,8 @@ npm run build:prod
 ```
 
 
+
+
 ```
 -  Angular 应用程序的八个主要构造块的基础知识
     - 模块
@@ -43,6 +45,22 @@ npm run build:prod
     - 测试：使用 Angular 测试平台，在你的应用部件与 Angular 框架交互时进行单元测试。
 
 ```
+
+```
+- AngularCLI介绍及命令使用
+    - ng new xxx
+    - ng serve -open
+    - ng build --dev 开发构建
+    - ng build --prod  生产构建
+    - ng g component my-new-component
+    - ng g pipe my-new-pipe
+    - ng g service my-new-service
+    - ng g class my-new-class
+    - g interface my-new-interface
+    - ng g module my-module
+```
+
+
 
 ```
 - NgModule 是一个装饰器函数，它接收一个用来描述模块属性的元数据对象。
@@ -69,6 +87,9 @@ npm run build:prod
     - [name] 属性绑定
     - (click) 事件绑定
     - 自定义事件（EventEmitter ）
+    - 事件绑定
+    - DOM属性
+    - html属性
 
 
 - 指令 (directive)：结构型指令和属性 (attribute) 型指令。
@@ -211,6 +232,9 @@ npm run build:prod
     - 父组件与子组件通过本地变量互动
     - 父组件调用@ViewChild()
     - 父组件和子组件通过服务来通讯
+    - 输入属性
+    - 输出属性
+    - 中间人模式（事件广播的形式）
 
 - 组件样式
     - styles: ['h1 { font-weight: normal; }']
@@ -251,12 +275,19 @@ npm run build:prod
     - DatePipe
     - UpperCasePipe
     - LowerCasePipe
+    - slice
+    - number 数字管道
+    - 百分比管道
     - CurrencyPipe
     - PercentPipe
     - 管道进行参数化
     - 链式管道
     - 纯管道
     - 非纯管道
+    - json 
+    - 货币管道
+    - 自定义管道
+
 ```
 
 ## 动画（官方demo很不错）
@@ -342,6 +373,9 @@ npm run build:prod
     - 注入器
     - app.module.ts注册一个提供商（provider）
     - @Component元数据中的providers属性中把它注册在组件层
+    - 依赖注入的好处
+    - 提供器
+    - 使用工厂模式和值声明提供器
 
 
 - HTTPClient
@@ -354,20 +388,28 @@ npm run build:prod
     - 请求非 JSON 数据
     - http.post
     - 请求中其他参数的配置
-        - 头
+        - 头 headers
         - URL 参数
     - 拦截所有的请求和响应
     - 记日志
     - 缓存
     - 监听进度事件 reportProgress: true
+    - web scoket
+    - 使用rxjs的http
+    - 不使用rxjs的http
+    - 使用Promise的http
+    - josnp
     - 测试 HTTP 请求
+
    
 
 - 路由（Router）
     - <base href> 元素
+    - 配置路由
     - RouterModule.forRoot的配置（AppRoutingModule）
     - 路由出口 router-outlet
     - 路由器链接 <a routerLink="/crisis-center" routerLinkActive="active">routerLink</a>
+    - 路由选中
     - 路由器状态 routerState
     - 激活的路由 ActivatedRoute
         - url	        路由路径的Observable对象，是一个由路由路径中的各个部分组成的字符串数组。
@@ -397,12 +439,12 @@ npm run build:prod
     - 通配符路由：404路由
     - 默认路由
     - 重定向路由
-    - 子路由
+    - 路由的嵌套、父子路由
     - 辅助路由(第二路由)
-    - 动态路由
+    - 动态路由 获取动态路由数据
     - 带参数的路由 :id
-    - 路由get参数
-    - js的路由跳转
+    - 路由get参数 获取数据
+    - js的路由跳转、get路由
     - Snapshot（快照)
     - CanActivate守卫（检查路由的访问权限）。
     - CanActivateChild守卫（检查子路由的访问权限）。
@@ -414,6 +456,8 @@ npm run build:prod
     - 惰性加载路由配置  loadChildren: 'app/admin/admin.module#AdminModule'
     - CanLoad会阻塞预加载
     - 自定义预加载策略
+    - 路由返回
+
 
 
 路由名词
@@ -431,10 +475,28 @@ npm run build:prod
 
 ```
 
+```
+- 多环境
+    - environments.prod
+    - environments.test
+    - environments
+
+- 其他
+    - 基于class的数据类型验证
+
+- 响应式编程
+```
+
 ## 测试
 ```
 
+```
 
+
+
+```
+ls -alh
+du -h
 
 
 ```
