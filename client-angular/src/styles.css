@@ -5,6 +5,12 @@
     margin: 0;
 }
 
+body {
+    margin: 0 auto;
+    max-width: 880px;
+    min-height: 100%;
+}
+
 ul,
 ol {
     list-style: none;
