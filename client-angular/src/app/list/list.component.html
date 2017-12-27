@@ -1,51 +1,10 @@
-<ul>
-    <h4>基础</h4>
-    <li>
-        <a routerLink="/component001">template字符模板</a>
-    </li>
-    <li>
-        <a routerLink="/component002">基于class的类型验证</a>
-    </li>
-    <li>
-        <a routerLink="/component003">双向绑定</a>
-    </li>
-    <li>
-        <a routerLink="/component004">ngFor 来显示列表</a>
-    </li>
-    <li>
-        <a routerLink="/component005">styles字符模板</a>
-    </li>
-    <li>
-        <a routerLink="/component006">处理点击事件</a>
-    </li>
-    <li>
-        <a routerLink="/component007">使用 ngIf 隐藏空的详情</a>
-    </li>
-    <li>
-        <a routerLink="/component008">[class.selected]="hero === selectedHero" 来控制当前选中</a>
-    </li>
-    <li>
-        <a routerLink="/component009">Dom属性绑定</a>
-    </li>
-    <li>
-        <a routerLink="/component010">事件绑定</a>
-    </li>
-    <li>
-        <a routerLink="/component011">HTML属性绑定</a>
-    </li>
-    <li>
-        <a routerLink="/component012">双向绑定:自定义实现、ngModel的实现</a>
-    </li>
-    <li>
-        <a routerLink="/component013">innerHTML指令</a>
-    </li>
-    <li>
-        <a routerLink="/component014">杂七杂八的练习</a>
-    </li>
-    <li>
-        <a routerLink="/component015">todolist</a>
+<ul *ngFor="let items of data;">
+    <h4>{{ items.title }}</h4>
+    <li *ngFor="let item of items.list;">
+        <a routerLink="/{{ item.path }}">{{ item.name }}</a>
     </li>
 </ul>
+
 
 <ul>
     <h4>router</h4>
@@ -210,8 +169,3 @@
         <a routerLink="/pipe001">管道基础</a>
     </li>
 </ul>
-
-<br>
-<br>
-<br>
-<br>
