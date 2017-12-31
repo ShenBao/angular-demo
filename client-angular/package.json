@@ -1,7 +1,15 @@
 {
     "name": "client-angular",
+    "title": "client-angular",
     "version": "1.0.0",
     "license": "MIT",
+    "author": "ShenBao <shenbaoone@gmail.com>",
+    "homepage": "https://github.com/ShenBao/angular-demo",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ShenBao/angular-demo"
+    },
+    "bugs": "https://github.com/ShenBao/angular-demo/issues",
     "scripts": {
         "ng": "ng",
         "start": "ng serve --port 80 --open --proxy-config proxy.conf.json",
