@@ -7,6 +7,5 @@
 <img src="./shot/QR-code.png" width="150" />
 
 
-
-
+包括组件、路由、HTTP、PIPE等
 
